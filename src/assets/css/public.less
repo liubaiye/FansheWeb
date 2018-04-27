@@ -1,0 +1,337 @@
+/**
+ * æ–‡ä»¶: public.css
+ * åç§°: åˆå§‹åŒ–(2015.09.14)
+ * ä½œè€…: åˆ˜å½¬ <704251611@qq.com>
+**/
+
+
+/*
+ æ¸…é™¤å†…å¤–è¾¹è·
+*/
+@font-face {
+    font-family: "PingFangBold";
+    src: url('../fonts/PingFangBold.ttf');
+    /* IE9*/
+}
+@font-face {
+    font-family: "PingFangExtraLight";
+    src: url('../fonts/PingFangExtraLight.ttf');
+    /* IE9*/
+}
+@font-face {
+    font-family: "PingFangHeavy";
+    src: url('../fonts/PingFangHeavy.ttf');
+    /* IE9*/
+}
+@font-face {
+    font-family: "PingFangLight";
+    src: url('../fonts/PingFangLight.ttf');
+    /* IE9*/
+}
+@font-face {
+    font-family: "PingFangRegular";
+    src: url('../fonts/PingFangRegular.ttf');
+    /* IE9*/
+}
+@font-face {
+    font-family: "pingfangmediu";
+    src: url('../fonts/pingfangmediu.ttf');
+    /* IE9*/
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+
+/* structural elements ç»“æž„å…ƒç´  */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+/* list elements åˆ—è¡¨å…ƒç´  */
+
+pre,
+
+/* text formatting elements æ–‡æœ¬æ ¼å¼å…ƒç´  */
+
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+
+/* form elements è¡¨å•å…ƒç´  */
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td
+/* table elements è¡¨æ ¼å…ƒç´  */
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ è®¾ç½®é»˜è®¤å­—ä½“
+*/
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+    font-style: normal;
+}
+
+
+/* å°†æ–œä½“æ‰¶æ­£ */
+
+
+/* ç»Ÿä¸€ç­‰å®½å­—ä½“ */
+
+small {
+    font-size: 12px;
+}
+
+
+/* å°äºŽ 12px çš„ä¸­æ–‡å¾ˆéš¾é˜…è¯»ï¼Œè®© small æ­£å¸¸åŒ– */
+
+
+/*
+ é‡ç½®åˆ—è¡¨å…ƒç´ 
+*/
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+* {
+    font-family: 'PingFangBold'
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+ é‡ç½®æ–‡æœ¬æ ¼å¼å…ƒç´ 
+*/
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+
+/* é‡ç½®ï¼Œå‡å°‘å¯¹è¡Œé«˜çš„å½±å“ */
+
+sub {
+    vertical-align: text-bottom;
+}
+
+
+/*
+ é‡ç½®è¡¨å•å…ƒç´ 
+*/
+
+legend {
+    color: #000;
+}
+
+
+/* for ie6 */
+
+fieldset,
+img {
+    border: 0;
+}
+
+
+/* img æ­è½¦ï¼šè®©é“¾æŽ¥é‡Œçš„ img æ— è¾¹æ¡† */
+
+textarea {
+    resize: none;
+}
+
+
+/* ä½¿å¾—è¡¨å•å…ƒç´ åœ¨ ie ä¸‹èƒ½ç»§æ‰¿å­—ä½“å¤§å° */
+
+input {
+    vertical-align: middle;
+    border: none;
+}
+
+
+/*input, select, textarea { box-shadow: none; appearance: normal; -moz-appearance: normal; -webkit-appearance : none; resize: none; }*/
+
+
+/* æ³¨ï¼šoptgroup æ— æ³•æ‰¶æ­£ */
+
+
+/* æ¸…é™¤æµ®åŠ¨ */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-table;
+}
+
+
+/* Hides from IE-mac \*/
+
+.clearfix {
+    display: block;
+}
+
+
+/* End hide from IE-mac */
+
+.clear {
+    padding: 0;
+    margin: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+
+/*
+ é‡ç½®è¡¨æ ¼å…ƒç´ 
+*/
+
+
+/*
+ å³ä¾§æ»šåŠ¨æ¡
+*/
+
+.height100 {
+    height: 100%;
+}
+
+.animation {
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+}
+
+.ani {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.ellipsis-3 {
+    display: -webkit-box;
+    display: -moz-box;
+    overflow: hidden;
+    white-space: normal!important;
+    text-overflow: ellipsis;
+    -moz-line-clamp: 3;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.ellipsis-2 {
+    display: -webkit-box;
+    display: -moz-box;
+    overflow: hidden;
+ 
+    white-space: normal!important;
+    text-overflow: ellipsis;
+    -moz-line-clamp: 2;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.ellipsis-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.before:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

@@ -1,0 +1,414 @@
+
+
+@import url('./public.less');
+
+#app {
+    height: 100%;
+    .el-main {
+        padding: 0;
+        overflow: hidden;
+    }
+}
+.source .el-breadcrumb__inner{
+    font-family: "pingfangmediu";
+    font-weight: 500;
+  }
+.el-menu--horizontal .el-menu .el-menu-item.is-active {
+    // border-bottom: 1px solid #4c4948!important;
+ color: #303133;
+}
+.el-menu--popup-bottom-start{
+    margin-top: 0!important;
+}
+.el-menu--popup:before{
+    content: '';
+    display: inline-block;
+    width: 70%;
+    height: 4px;
+    background-color: #00324e;
+    position: absolute;
+    top: -9px;
+    left: 15%;
+}
+.wechat{
+    display: inline-block;
+    width: 44px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url(../../../static/images/weixin_03.png);
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+.wechat:hover,.weibo:hover{
+    background-position: 0 -57px;
+}
+.weibo{
+    transition: all 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    width: 44px;
+    height: 50px;
+    background-image: url(../../../static/images/weibo_05.png);
+    background-repeat: no-repeat;
+}
+.el-menu--popup::after{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    position: absolute;
+    border: 2px solid #00324e;
+    top: -15px;
+    left: 48%;
+    border-radius: 50%;
+}
+.el-menu-demo:hover{
+    span{
+        border-bottom: 1px solid #4c4948!important;
+    }
+}
+.el-menu-demo{
+    span{
+  
+       
+        padding:  0 10px 5px 10px;
+     
+    }
+}
+.el-menu-demo.is-active{
+    span{
+        border-bottom: 1px solid #4c4948!important;
+    }
+}
+.head {
+    border-bottom: 1px solid #000000;
+    .head-contair {
+        height: 100%;
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        .nav-list .el-menu-item.is-active {
+            border-bottom: none;
+            color: #00324e;
+        }
+        .nav-list .el-submenu.is-active .el-submenu__title {
+            border-bottom: none;
+            color: #00324e;
+        }
+        
+     
+        .el-submenu>.el-submenu__title .el-submenu__icon-arrow {
+            font-size: 22px;
+            color: rgb(76, 73, 72);
+        }
+        .icon-group {
+            position: absolute;
+            top: 36px;
+            right: 0;
+        }
+        
+        .icon-group img {
+            cursor: pointer;
+        }
+        
+    }
+}
+.box-card .el-card__body{
+    font-family: "pingfangmediu";
+    text-indent:25px;
+    font-weight: normal;
+ }
+.el-menu-item.el-menu-demo {
+    text-align: center;
+    font-size: 16px;
+}
+header.el-header.head{
+    background-color: #fff;
+    z-index: 999;
+}
+header.el-header.head.fixed {
+    position: fixed;
+    
+    border-bottom: none;
+    width: 100%;
+    transition: all 0.3s;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+}
+
+
+
+.logo {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.nav-list {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.nav-list .el-menu {
+    border-bottom: none;
+}
+
+.nav-list .el-submenu__title,
+.title-index {
+    font-size: 18px;
+}
+
+.head-row {
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.middle-nav {
+    height: 115px;
+}
+
+.middle-nav .el-menu-item,
+.middle-nav .el-submenu__title {
+    padding: 0 30px;
+}
+
+.el-menu {
+    text-align: left;
+}
+
+.tel-phone {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 100%;
+}
+
+.body-contair {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.index-center-title{
+    width: 100%;
+    height: 75px;
+    background-color: #d2d2d2;
+    margin: 40px 0;
+    position: relative;
+    img{
+        width: 100%;
+        position: absolute;
+        top: 18px;
+        left: 0;
+    }
+}
+.business-item>* {
+    font-family: "pingfangmediu";
+    img{
+        width: 100%;
+    }
+}
+.business-item{
+    .el-col.el-col-24{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
+
+.swripe{
+    .el-carousel__indicator{
+       padding: 12px 5px;
+       .el-carousel__button{
+           width: 14px;
+           height: 14px;
+           border-radius: 50%;
+           background-color: transparent;
+           border: 2px solid #fff;
+           box-sizing: border-box;
+           opacity: 1;
+       }
+       
+    }
+    .el-carousel__indicator.is-active{
+        .el-carousel__button{
+            background-color: #00324e;
+            border: 2px solid #00324e;
+            opacity: 1;
+       }
+    }
+}
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 150px;
+    margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+}
+
+.logo-group{
+    padding-top: 45px;
+    h2{
+        color: #4c4948;
+    }
+    .box{
+        border: 7px solid #a0a0a0;
+        padding: 28px;
+        margin-top: 20px;
+    }
+}
+.index-news{
+    li{
+        font-weight: normal;
+        position: relative;
+        font-family: "pingfangmediu";
+        padding-left: 10px;
+        line-height: 30px;
+        color: #4c4948;
+    }
+    li:before{
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #4c4948;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 13px;
+    }
+}
+.text-center {
+    text-align: center;
+}
+span.more{
+    color: #4c4948;
+    display: inline-block;
+    padding-left: 36px;
+    background-image: url(../../../static/new/index7.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: right;
+    cursor: pointer;
+}
+.center-title {
+    font-size: 30px;
+    color: #4c4948;
+    padding: 60px 0;
+    font-family: 'pingfangmediu'
+}
+.business-item h2{
+    font-size: 18px;
+}
+.business-item p {
+    font-size: 16px;
+    line-height: 30px;
+}
+.business-item h2,
+.business-item p {
+
+    font-family: "pingfangmediu";
+}
+
+.business-item p {
+    color: #4c4948;
+}
+
+.business-item h2 {
+    padding: 20px 0;
+}
+
+.footer-contair {
+    width: 1520px;
+    margin: 0 auto;
+    font-family: 'pingfangmediu';
+    color: #4c4948;
+    font-size: 20px;
+    padding: 100px 0 30px 0;
+}
+
+.about{
+    font-family: 'pingfangmediu';
+    .title{
+        text-align: center;
+        font-size: 52px;
+        font-family: 'pingfangmediu';
+        color: #595757;
+        padding: 60px 0;
+    }
+    .words{
+        p{
+            font-family: 'pingfangmediu';
+            line-height: 40px;
+        }
+        text-align: center;
+        color: #595757;
+        font-size: 18px;
+       
+    }
+    .secend-title{
+        font-family: 'PingFangBold';
+        color: #00324e;
+        font-size: 23px;
+        line-height: 40px;
+        border-bottom: 1px solid #00324e;
+        padding: 15px 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .secend-ab{
+        
+        p{
+            font-family: 'pingfangmediu';
+            color: #595757;
+            font-size: 16px;
+            line-height: 30px;
+        }
+        .mian-ab{
+            height: 50%;
+            padding: 70px 60px;
+            box-sizing: border-box;
+           
+        }
+    }
+    .text-center.secend-ab.el-col.el-col-8 {
+        height: 926px;
+    }
+    .gsjs{
+        .el-row{
+            margin-bottom: 20px;
+        }
+    }
+    .manage-team{
+        font-size: 0;
+        .name-box{
+            padding: 20px;
+            background-color: #dcdddd;
+            h3{
+                font-size: 18px;
+                text-align: left;
+                margin-top: 20px;
+                color: #00324e;
+            } 
+            p{
+                color: #4c4948;
+                font-size: 16px;
+                line-height: 40px;
+                text-align: left;
+                font-family: 'pingfangmediu';
+                padding-top: 20px;
+            }
+        }
+        
+    }
+}
